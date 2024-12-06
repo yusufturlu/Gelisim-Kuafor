@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gelişim Kuaför - İmajınızı Güzelleştirir</title>
+</head>
+<body onload="isletmeDurumu()">
+
+    <style>
+        .slider img.sliderBg {
+            max-height: 300px;
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                    <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                </a>
+                <span id="durum"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    <a class="nav-link" href="imajiniz.html">İmajınız</a>
+                    <a class="nav-link" href="fiyat-listesi.html">Fiyat Listesi</a>
+                    <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" id="toggleButton"><strong>Gece Modu</strong></a>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mainContent">
+        <div class="slider">
+            <img class="sliderBg" src="img/slider-1.jpg" alt="Slider">
+            <div class="sliderDetail">
+                <h1>İptal ve İade Koşulları</h1>
+            </div>
+        </div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 mt-4">
+                  <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">İptal ve İade Koşulları</li>
+                </ol>
+            </nav>
+            <div class="singleContent">
+                <h3>Giriş</h3>
+                <ul>
+                    <li>Kullanmakta olduğunuz web sitesi üzerinden elektronik ortamda sipariş verdiğiniz takdirde, size sunulan ön bilgilendirme formunu ve mesafeli satış sözleşmesini kabul etmiş sayılırsınız.</li>
+                    <li>Alıcılar, satın aldıkları ürünün satış ve teslimi ile ilgili olarak 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği (RG:27.11.2014/29188) hükümleri ile yürürlükteki diğer yasalara tabidir.</li>
+                    <li>Ürün sevkiyat masrafı olan kargo ücretleri firmamız tarafından ödenecektir. Herhangi bir sebepten ürün değişiminde kargo ücreti firmamıza, iade durumunda ise kargo ücreti alıcılara aittir.</li>
+                    <li>Satın alınan her bir ürün, 30 günlük yasal süreyi aşmamak kaydı ile  alıcının gösterdiği adresteki kişi ve/veya kuruluşa teslim edilir. Bu süre içinde ürün teslim edilmez ise,  Alıcılar sözleşmeyi sona erdirebilir.</li>
+                    <li>Satın alınan ürün, eksiksiz ve siparişte belirtilen niteliklere uygun ve varsa garanti belgesi, kullanım klavuzu gibi belgelerle teslim edilmek zorundadır.</li>
+                    <li>Satın alınan ürünün satılmasının imkansızlaşması durumunda, satıcı bu durumu öğrendiğinden itibaren 3 gün içinde yazılı olarak alıcıya bu durumu bildirmek zorundadır. 14 gün içinde de toplam bedel Alıcı’ya iade edilmek zorundadır. </li>
+                </ul>
+                <h3>Satın Alınan Ürün Bedeli Ödenmez İse:</h3>
+                <p>Alıcı, satın aldığı ürün bedelini ödemez veya banka kayıtlarında iptal ederse, Satıcının ürünü teslim yükümlülüğü sona erer.</p>
+                <h3>Kredi Kartının Yetkisiz Kullanımı İle Yapılan Alışverişler</h3>
+                <p>Ürün teslim edildikten sonra, alıcının ödeme yaptığı kredi kartının yetkisiz kişiler tarafından haksız olarak kullanıldığı tespit edilirse ve satılan ürün bedeli ilgili banka veya finans kuruluşu tarafından Satıcı'ya ödenmez ise, Alıcı, sözleşme konusu ürünü 3 gün içerisinde nakliye gideri SATICI’ya ait olacak şekilde SATICI’ya iade etmek zorundadır.</p>
+                <h3>Öngörülemeyen Sebeplerle Ürün Süresinde Teslim Edilemez İse</h3>
+                <p>Satıcı’nın öngöremeyeceği mücbir sebepler oluşursa ve ürün süresinde teslim edilemez ise, durum Alıcı’ya bildirilir. Alıcı, siparişin iptalini, ürünün benzeri ile değiştirilmesini veya engel ortadan kalkana dek teslimatın ertelenmesini talep edebilir. Alıcı siparişi iptal ederse; ödemeyi nakit ile yapmış ise iptalinden itibaren 14 gün içinde kendisine nakden bu ücret ödenir. Alıcı, ödemeyi kredi kartı ile yapmış ise ve iptal ederse, bu iptalden itibaren yine 14 gün içinde ürün bedeli bankaya iade edilir, ancak bankanın alıcının hesabına 2-3 hafta içerisinde aktarması olasıdır.</p>
+                <h3>Alıcının Ürünü Kontrol Etme Yükümlülüğü</h3>
+                <p>Alıcı, sözleşme konusu mal/hizmeti teslim almadan önce muayene edecek; ezik, kırık, ambalajı yırtılmış vb. hasarlı ve ayıplı mal/hizmeti kargo şirketinden teslim almayacaktır. Teslim alınan mal/hizmetin hasarsız ve sağlam olduğu kabul edilecektir. ALICI , Teslimden sonra mal/hizmeti özenle korunmak zorundadır. Cayma hakkı kullanılacaksa mal/hizmet kullanılmamalıdır. Ürünle birlikte Fatura da iade edilmelidir.</p>
+                <h3>Cayma Hakkı</h3>
+                <p>ALICI; satın aldığı ürünün kendisine veya gösterdiği adresteki kişi/kuruluşa teslim tarihinden itibaren 14 (on dört) gün içerisinde, SATICI’ya aşağıdaki iletişim bilgileri üzerinden bildirmek şartıyla hiçbir hukuki ve cezai sorumluluk üstlenmeksizin ve hiçbir gerekçe göstermeksizin malı reddederek sözleşmeden cayma hakkını kullanabilir.</p>
+                <p>Satıcının Cayma Hakkı Bildirimi Yapılacak İletişim Bilgileri</p>
+                <ul>
+                    <li>Ad / Unvanı: Gelişim Kuaför</li>
+                    <li>Adres: Cihangir, Petrol Ofisi Cd. No: 7 Avcılar / İSTANBUL</li>
+                    <li>E-Posta: info@gelisimkuafor.com</li>
+                    <li>Tel: 0212 345 67 90</li>
+                </ul>
+                <h3>Cayma Hakkının Süresi</h3>
+                <ul>
+                    <li>Alıcı, satın aldığı eğer bir hizmet  ise, bu 14 günlük süre sözleşmenin imzalandığı tarihten itibaren başlar. Cayma hakkı süresi sona ermeden önce, tüketicinin onayı ile hizmetin ifasına başlanan hizmet sözleşmelerinde cayma hakkı kullanılamaz.</li>
+                    <li>Cayma hakkının kullanımından kaynaklanan masraflar SATICI’ ya aittir.</li>
+                    <li>Cayma hakkının kullanılması için 14 (ondört) günlük süre içinde SATICI' ya iadeli taahhütlü posta, faks veya eposta ile yazılı bildirimde bulunulması ve ürünün işbu sözleşmede düzenlenen "Cayma Hakkı Kullanılamayacak Ürünler" hükümleri çerçevesinde kullanılmamış olması şarttır.</li>
+                </ul>
+                <h3>Cayma Hakkının Kullanımı</h3>
+                <ul>
+                    <li>3. kişiye veya ALICI’ ya teslim edilen ürünün faturası, (İade edilmek istenen ürünün faturası kurumsal ise, iade ederken kurumun düzenlemiş olduğu iade faturası ile birlikte gönderilmesi gerekmektedir. Faturası kurumlar adına düzenlenen sipariş iadeleri İADE FATURASI kesilmediği takdirde tamamlanamayacaktır.)</li>
+                    <li>İade formu, İade edilecek ürünlerin kutusu, ambalajı, varsa standart aksesuarları ile birlikte eksiksiz ve hasarsız olarak teslim edilmesi gerekmektedir.</li>
+                </ul>
+                <h3>İade Koşulları</h3>
+                <ul>
+                    <li>SATICI, cayma bildiriminin kendisine ulaşmasından itibaren en geç 10 günlük süre içerisinde toplam bedeli ve ALICI’yı borç altına sokan belgeleri ALICI’ ya iade etmek ve 20 günlük süre içerisinde malı iade almakla yükümlüdür.</li>
+                    <li>ALICI’ nın kusurundan kaynaklanan bir nedenle malın değerinde bir azalma olursa veya iade imkânsızlaşırsa ALICI kusuru oranında SATICI’ nın zararlarını tazmin etmekle yükümlüdür. Ancak cayma hakkı süresi içinde malın veya ürünün usulüne uygun kullanılması sebebiyle meydana gelen değişiklik ve bozulmalardan ALICI sorumlu değildir.</li>
+                    <li>Cayma hakkının kullanılması nedeniyle SATICI tarafından düzenlenen kampanya limit tutarının altına düşülmesi halinde kampanya kapsamında faydalanılan indirim miktarı iptal edilir.</li>
+                </ul>
+                <h3>Cayma Hakkı Kullanılamayacak Ürünler</h3>
+                <ul>
+                    <li>ALICI’nın isteği veya açıkça kişisel ihtiyaçları doğrultusunda hazırlanan ve geri gönderilmeye müsait olmayan, iç giyim alt parçaları, mayo ve bikini altları, makyaj malzemeleri, tek kullanımlık ürünler, çabuk bozulma tehlikesi olan veya son kullanma tarihi geçme ihtimali olan mallar, ALICI’ya teslim edilmesinin ardından ALICI tarafından ambalajı açıldığı takdirde iade edilmesi sağlık ve hijyen açısından uygun olmayan ürünler, teslim edildikten sonra başka ürünlerle karışan ve doğası gereği ayrıştırılması mümkün olmayan ürünler, Abonelik sözleşmesi kapsamında sağlananlar dışında, gazete ve dergi gibi süreli yayınlara ilişkin mallar, Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallar, ile ses veya görüntü kayıtlarının, kitap, dijital içerik, yazılım programlarının, veri kaydedebilme ve veri depolama cihazlarının, bilgisayar sarf malzemelerinin, ambalajının ALICI tarafından açılmış olması halinde iadesi Yönetmelik gereği mümkün değildir. Ayrıca Cayma hakkı süresi sona ermeden önce, tüketicinin onayı ile ifasına başlanan hizmetlere ilişkin cayma hakkının kullanılması da Yönetmelik gereği mümkün değildir.</li>
+                    <li>Kozmetik ve kişisel bakım ürünleri, iç giyim ürünleri, mayo, bikini, kitap, kopyalanabilir yazılım ve programlar, DVD, VCD, CD ve kasetler ile kırtasiye sarf malzemeleri (toner, kartuş, şerit vb.) iade edilebilmesi için ambalajlarının açılmamış, denenmemiş, bozulmamış ve kullanılmamış olmaları gerekir.</li>
+                </ul>
+                <h3>Temerrüt Hali ve Hukuki Sonuçları</h3>
+                <p>23.ALICI, ödeme işlemlerini  kredi kartı ile yaptığı durumda temerrüde düştüğü takdirde, kart sahibi banka ile arasındaki kredi kartı sözleşmesi çerçevesinde faiz ödeyeceğini ve bankaya karşı sorumlu olacağını kabul, beyan ve taahhüt eder. Bu durumda ilgili banka hukuki yollara başvurabilir; doğacak masrafları ve vekâlet ücretini ALICI’dan talep edebilir ve her koşulda ALICI’nın borcundan dolayı temerrüde düşmesi halinde, ALICI, borcun gecikmeli ifasından dolayı SATICI’nın uğradığı zarar ve ziyanını ödeyeceğini kabul eder.</p>
+                <h3>Ödeme ve Teslimat</h3>
+                <p>Banka Havalesi veya EFT (Elektronik Fon Transferi) yaparak, Garanti, Kuveyt Türk, Yapi Kredi bankası hesaplarımızdan (TL) herhangi birine yapabilirsiniz.</p>
+                <p>Sitemiz üzerinden kredi kartlarınız ile, Her türlü kredi kartınıza online tek ödeme ya da online taksit imkânlarından yararlanabilirsiniz. Online ödemelerinizde siparişiniz sonunda kredi kartınızdan tutar çekim işlemi gerçekleşecektir.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="googleMap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/map-small.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footerContent">
+            <div class="container">
+                <div class="footerMenu">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <div class="mainLogo">
+                                    <a href="index.html">
+                                        <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                                        <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                                    </a>
+                                </div>
+                                <div class="siteDesc">
+                                    <p>2023 yılından bu güne profesyonel kuaför ekibimizle Avcılar'da hizmet vermekteyiz. Gelişim Kuaför olarak önceliğimiz müşteri memnuniyeti ve rahatıdır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Yasal Bilgilendirme <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                                    <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                                    <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Sözleşmeler <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="iptal-ve-iade-kosullari.html">İptal ve İade Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <h4>Bana Ulaşın</h4>
+                                <ul class="noList">
+                                    <li><a target="_blank" href="https://wa.me/902123456790">Whatsapp <span class="badge">0212 345 67 90</span></a></li>
+                                    <li><a target="_blank" href="mailto:info@gelisimkuafor.com">E-Posta Adresi <span class="badge">info@gelisimkuafor.com</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row align-items-center pt-3 pb-3">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <span><strong>Gelişim Kuaför</strong> © 2023 - 2024 Tüm Hakları Saklıdır.</span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="footerSocial">
+                            <ul class="noList d-flex align-items-center justify-content-end">
+                                <li><a target="_blank" href="https://www.facebook.com/gelisimedu"><i class="ri-facebook-circle-line"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/igugelisim/"><i class="ri ri-instagram-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><img src="img/up-icon.png"></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

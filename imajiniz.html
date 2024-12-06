@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gelişim Kuaför - İmajınızı Güzelleştirir</title>
+</head>
+<body onload="isletmeDurumu()">
+    
+    <style>
+        .slider img.sliderBg {
+            max-height: 300px;
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                    <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                </a>
+                <span id="durum"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    <a class="nav-link active" href="imajiniz.html">İmajınız</a>
+                    <a class="nav-link" href="fiyat-listesi.html">Fiyat Listesi</a>
+                    <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" id="toggleButton"><strong>Gece Modu</strong></a>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mainContent">
+        <div class="slider">
+            <img class="sliderBg" src="img/slider-1.jpg" alt="Slider">
+            <div class="sliderDetail">
+                <h1>Sizin İmajınız</h1>
+            </div>
+        </div>
+        <div class="contactForm">
+            <div class="container">
+                <form id="form">
+                    <h3>Formu Doldurun, Hemen Geri Dönüş Yapalım.</h3>
+                    <span>Size en uygun saç modelini sizlerin verdiği bilgiler doğrultusunda kendinize iletip en iyi imajınızı oluşturuyoruz!</span>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Saç Tipiniz</label>
+                        <select type="text" class="form-control" name="sac" required>
+                            <option>Uzun ve Seyrek</option>
+                            <option>Uzun ve Gür</option>
+                            <option>Uzun ve Sık</option>
+                            <option>Kısa ve Seyrek</option>
+                            <option>Kısa ve Gür</option>
+                            <option>Kısa ve Sık</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Saçınızın Yağlanma Sıklığı</label>
+                        <select type="text" class="form-control" name="sac" required>
+                            <option>Günübirlik</option>
+                            <option>2 Günde bir</option>
+                            <option>3 Günde bir</option>
+                            <option>Haftada bir</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Saçınızı Yıkama Sıklığınız</label>
+                        <select type="text" class="form-control" name="sac" required>
+                            <option>Günübirlik</option>
+                            <option>Günde 2 kez</option>
+                            <option>2 Günde 1</option>
+                            <option>3 Günde 1</option>
+                            <option>4 günde 1</option>
+                            <option>Haftada 1</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Saçınızın Dokusu</label>
+                        <select type="text" class="form-control" name="sac" required>
+                            <option>Yumuşak</option>
+                            <option>Sert</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Saçınızın Kepeklenme Durumu</label>
+                        <select type="text" class="form-control" name="sac" required>
+                            <option>Sık kepeklenir</option>
+                            <option>Ara Sıra Kepeklenir</option>
+                            <option>Az Kepeklenir</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ek olarak belirtmek istediklerinizni yazabilirsiniz.</label>
+                        <textarea name="" class="form-control" id="" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Size Ulaşmamız İçin Mail Adresinizi Giriniz.</label>
+                        <input type="text" name="" class="form-control" id="" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-4">Gönder</button>
+                    <p>Bize Ulaşmak için <a href="mailto:info@gelisimkuafor.com">buraya</a> basarak mail gönderebilirsiniz</p>
+
+                    <div class="thankYouMessage">Form gönderildi, teşekkürler. Ekiplerimiz en kısa zamanda sizlere geri dönüş yapılacaktır.</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="googleMap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/map-small.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footerContent">
+            <div class="container">
+                <div class="footerMenu">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <div class="mainLogo">
+                                    <a href="index.html">
+                                        <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                                        <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                                    </a>
+                                </div>
+                                <div class="siteDesc">
+                                    <p>2023 yılından bu güne profesyonel kuaför ekibimizle Avcılar'da hizmet vermekteyiz. Gelişim Kuaför olarak önceliğimiz müşteri memnuniyeti ve rahatıdır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Yasal Bilgilendirme <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                                    <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                                    <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Sözleşmeler <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="iptal-ve-iade-kosullari.html">İptal ve İade Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <h4>Bana Ulaşın</h4>
+                                <ul class="noList">
+                                    <li><a target="_blank" href="https://wa.me/902123456790">Whatsapp <span class="badge">0212 345 67 90</span></a></li>
+                                    <li><a target="_blank" href="mailto:info@gelisimkuafor.com">E-Posta Adresi <span class="badge">info@gelisimkuafor.com</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row align-items-center pt-3 pb-3">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <span><strong>Gelişim Kuaför</strong> © 2023 - 2024 Tüm Hakları Saklıdır.</span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="footerSocial">
+                            <ul class="noList d-flex align-items-center justify-content-end">
+                                <li><a target="_blank" href="https://www.facebook.com/gelisimedu"><i class="ri-facebook-circle-line"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/igugelisim/"><i class="ri ri-instagram-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><img src="img/up-icon.png"></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
