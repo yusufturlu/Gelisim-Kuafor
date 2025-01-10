@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="web site icon" href="img/logo.png">
+    <style>
+        #user {
+            margin:  10px;
+        }
+    </style>
+    <title>Gelişim Kuaför - İmajınızı Güzelleştirir</title>
+</head>
+<body onload="isletmeDurumu()">
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                    <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                </a>
+                <span id="durum"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Ana Sayfa</a>
+                    <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    <a class="nav-link" href="imajiniz.html">İmajınız</a>
+                    <a class="nav-link" href="fiyat-listesi.php">Fiyat Listesi</a>
+                    <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" id="toggleButton"><strong>Gece Modu</strong></a>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mainContent">
+
+        <div class="slider">
+            <img class="sliderBg home" src="img/slider-1.jpg" alt="Slider">
+            <div class="sliderDetail">
+                <h1>Seni Her Zaman <br> Mükemmel Gösterir!</h1>
+                <div id="kayanYazi"></div>
+                <a class="btn" href="imajiniz.html">Size Özel Saç Stiliniz!</a>
+                <a class="btn" id="user"  onclick="goToLogin()">Kullanıcı Girişi İçin Tıklayın !</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="main">
+                
+                <div class="alert alert-dismissible fade show mb-0 mt-4" role="alert">
+                    İlk kullancıya özel %50 NET indirim... <strong>Kupon Kodu: <span id="campainCode"></span></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="servicesArae mb-5 mt-5">
+                    <h3>Neler Yapıyoruz?</h3>
+                    <p>2023 yılından bu güne profesyonel erkek kuaför ekibimizle Avcılar'da hizmet vermekteyiz. <br> Gelişim Kuaför olarak önceliğimiz müşteri memnuniyeti ve rahatıdır.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="servicesItem mb-4">
+                                <img src="img/sac-kesimi.jpg" alt="Saç Kesimi">
+                                <div class="servicesDetail">
+                                    <h2>Saç Kesimi</h2>
+                                    <p>Erkek için saç modelleri arasından seçim yaparken saç yapısını, stili, uzunluğu ve kişisel beğenileri göz önünde bulundurmak saç kesim işlemi yapmak gerekir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="servicesItem mb-4">
+                                <img src="img/sakal.jpg" alt="Saç Kesimi">
+                                <div class="servicesDetail">
+                                    <h2>Sakal Bakımı</h2>
+                                    <p>Sakal tarzınızın nihai amacı yüzünüze kontrast ve boyut kazandırmaktır. Farklı yüz şekillerinde belirli yüz özellikleri vurgulanmalıdır; her sakal tarzı her erkekte harika görünmez.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="servicesItem mb-4">
+                                <img src="img/sac-sekillendirme.jpg" alt="Saç Kesimi">
+                                <div class="servicesDetail">
+                                    <h2>Saç Şekillendirme</h2>
+                                    <p>Dünya saç trendlerini takip ederek sizler için oluşturduğumuz özel koleksiyonlar oluşturuyoruz. Bugüne kadar en iyi saç tasarımı deneyimi için bizimle iletişime geçin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hairArea">
+                    <h3 class="headingTitle">Sizden Gelenler</h3>
+                    <div class="hairGallery owl-carousel">
+                        <a data-toggle="modal" data-target="#photo1">
+                            <img src="img/model/model-1.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo2">
+                            <img src="img/model/model-2.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo3">
+                            <img src="img/model/model-3.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo4">
+                            <img src="img/model/model-4.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo5">
+                            <img src="img/model/model-5.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo6">
+                            <img src="img/model/model-6.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo7">
+                            <img src="img/model/model-7.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo8">
+                            <img src="img/model/model-8.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo9">
+                            <img src="img/model/model-9.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo10">
+                            <img src="img/model/model-10.jpeg">
+                        </a>
+                        <a data-toggle="modal" data-target="#photo11">
+                            <img src="img/model/model-11.jpeg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="onlineBooking mb-4 mt-4">
+                    <h2>Online Rezervasyon için Hemen Randevu Alabilirsiniz.</h2>
+                    <a class="btn btn-block" href="rezervasyon.html">Randevu Al</a>
+                </div>
+
+                <div class="socialAccount">
+                    <h3>Rakamlarla Biz</h3>
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-5">
+                            <div class="counter" data-target="400"></div>
+                            <span class="counterText">Facebook</span>
+                        </div>
+    
+                        <div class="col-md-4 text-center mb-5">
+                            <div class="counter" data-target="342"></div>
+                            <span class="counterText">X (Twitter)</span>
+                        </div>
+    
+                        <div class="col-md-4 text-center">
+                            <div class="counter" data-target="1400"></div>
+                            <span class="counterText">Instagram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photoPopup">
+        <div class="modal fade" id="photo1" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0 p-0">
+                        <img src="img/model/model-1.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo2" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-2.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo3" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-3.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo4" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-4.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo5" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-5.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo6" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-6.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo7" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-7.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo8" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-8.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo9" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-9.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo10" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-10.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="photo11" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img src="img/model/model-11.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="googleMap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/map-small.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footerContent">
+            <div class="container">
+                <div class="footerMenu">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <div class="mainLogo">
+                                    <a href="index.html">
+                                        <img class="normalLogo" style="height: 55px" src="img/logo.png" alt="Gelişim Kuaför">
+                                        <img class="whiteLogo" style="height: 55px" src="img/beyaz-logo.png" alt="Gelişim Kuaför">
+                                    </a>
+                                </div>
+                                <div class="siteDesc">
+                                    <p>2023 yılından bu güne profesyonel kuaför ekibimizle Avcılar'da hizmet vermekteyiz. Gelişim Kuaför olarak önceliğimiz müşteri memnuniyeti ve rahatıdır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Yasal Bilgilendirme <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                                    <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                                    <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="menuItem">
+                                <h4 class="dropdown">Sözleşmeler <img src="img/arrow.png"></h4>
+                                <ul class="noList subMenu">
+                                    <li><a href="iptal-ve-iade-kosullari.html">İptal ve İade Koşulları</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="menuItem">
+                                <h4>Bana Ulaşın</h4>
+                                <ul class="noList">
+                                    <li><a target="_blank" href="https://wa.me/902123456790">Whatsapp <span class="badge">0212 345 67 90</span></a></li>
+                                    <li><a target="_blank" href="mailto:info@gelisimkuafor.com">E-Posta Adresi <span class="badge">info@gelisimkuafor.com</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row align-items-center pt-3 pb-3">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <span><strong>Gelişim Kuaför</strong> © 2023 - 2024 Tüm Hakları Saklıdır.</span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="footerSocial">
+                            <ul class="noList d-flex align-items-center justify-content-end">
+                                <li><a target="_blank" href="https://www.facebook.com/gelisimedu"><i class="ri-facebook-circle-line"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/igugelisim/"><i class="ri ri-instagram-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><img src="img/up-icon.png"></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
